@@ -121,7 +121,7 @@
 
                   margin 48px auto
 
-            &-show
+            &-show1, &-show2, &-show3
                   max-width 1400px
                   width 100%
 
@@ -242,31 +242,56 @@
                               list-style inside
                   
 
-// ------- MEDIA QUERIES -------
+// ------- MEDIA QUERIES -------   
 
-@media only screen and (max-width: 1428px)
-
-      .description
-            &__container
-                  &-values
-                        padding 64px 32px
-                        margin-bottom 0px
-
-                  &-title, &-info1, &-info2, &-info3
-                        display none                 
-                  
-@media only screen and (min-width: 1030px) and (max-width 1199px)
+@media only screen and (min-width: 991px) and (max-width 1439px)
 
       .description
             &__container
                   &-values
-                        ul
+                        margin-bottom 96px
+                        padding 32px 16px 16px
+
+                        h2
+                              text-align center
+                        
+                        .white
+                              text-align center
+                        
+                        ul 
                               flex-wrap wrap  
                         
                         li 
-                              max-width 480px
+                              max-width 470px
+                            
+                              margin 0 auto
+                                      
+                  &-info1, &-info2, &-info3
+                        padding 0 15px
+                        max-width 70%
 
-@media only screen and (min-width 932px) and (max-width 1029px)
+                        div
+                              max-width 100%
+                              min-width 684px
+                              margin 32px auto
+            
+                  &-show1, &-show3
+                        flex-wrap wrap 
+                        justify-content center
+
+                        svg 
+                              order 0
+                              margin-bottom 32px
+
+                  &-show2 
+                        flex-wrap wrap 
+                        justify-content center
+
+                        svg 
+                              order 0 !important
+                              margin-bottom 32px
+
+@media only screen and (min-width 932px) and (max-width 990px)
 
       .description
             &__container
@@ -284,8 +309,10 @@
                         
                         li 
                               max-width 450px
-                              
 
+                  &-title, &-info1, &-info2, &-info3
+                        display none
+                              
 @media only screen and (min-width 832px) and (max-width 931px)
 
       .description
@@ -304,6 +331,9 @@
                         
                         li 
                               max-width 400px
+                              
+                  &-title, &-info1, &-info2, &-info3
+                        display none
 
 @media only screen and (min-width: 792px) and (max-width: 831px)
 
@@ -335,6 +365,9 @@
                               min-width 280px
                               max-width 380px
                               margin 0 auto   
+                  
+                  &-title, &-info1, &-info2, &-info3
+                        display none
 
 @media only screen and (min-width: 320px) and (max-width: 791px)
 
@@ -365,4 +398,7 @@
                         li 
                               min-width 280px
                               max-width 380px
-                              margin 0 auto                        
+                              margin 0 auto 
+
+                  &-title, &-info1, &-info2, &-info3
+                        display none                       
